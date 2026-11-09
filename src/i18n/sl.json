@@ -1,0 +1,297 @@
+{
+  "nav": {
+    "home": "Domov",
+    "features": "Funkcija",
+    "docs": "Dokumentacija",
+    "docs-installation": "Instalacija",
+    "docs-configuration": "Konfiguracija",
+    "docs-guide": "Proročilo",
+    "docs-guide-explainer": "Kako delovati s njim",
+    "examples": "Primere",
+    "blog": "Blog",
+    "faq": "Pitanja in odgovori",
+    "events": "Dogodki",
+    "about": "O meni",
+    "contact": "Kontakt",
+    "pricing": "Cene",
+    "integration": "Integracija",
+    "get-listed": "Seznan v katalog",
+    "status": "Status",
+    "legal-notice": "Pravno sporočilo",
+    "privacy-policy": "Política prizadevanja za privatnost"
+  },
+  "labels": {
+    "ad": "Reklama",
+    "signup": "Prijava",
+    "learn-more": "Spoznaj več",
+    "ask-ai": "Spodnejaj o nas z AI",
+    "more-categories": "E kategorija",
+    "find-other-service": "Najdi drugo storitvijo",
+    "get-started": "Zaženi",
+    "explore-features": "Izgledaj posibilidades",
+    "author": "Avtor",
+    "published": "Objavljeno",
+    "updated": "Posodobljeno",
+    "by_category": "po kategoriji",
+    "by_tag": "po metu",
+    "tags": "Metki",
+    "tag": "Metka",
+    "categories": "Kategorije",
+    "category": "Kategorija",
+    "no-entries": "Ni zapisov",
+    "featured": "Izboljšan",
+    "continue-reading": "Daljša čitanja",
+    "share-article": "Podeli članek",
+    "share-email-subject": "Poglej ta članek",
+    "email": "E-pošta",
+    "toc": "Mestni izpis",
+    "min-read": "min čitanja",
+    "to-start": "V začetek",
+    "back": "Nazaj",
+    "back-overview": "Pregled",
+    "back-all-articles": "Vse članki",
+    "back-all-events": "Vsa dogodka",
+    "pagination": "Paginacija",
+    "page": "Stran",
+    "prev": "Prejšnji",
+    "next": "Naslednji",
+    "open-menu": "Odpri meni",
+    "close-menu": "Zapri meni",
+    "change-light-mode": "Promeni svetlobo",
+    "offering": "Nudi",
+    "company": "Kompanka",
+    "resources": "Resursi",
+    "subscribe": "Povej se na našu novicebo",
+    "subscribe-tool": "Povej e-pošto address na newsletter.",
+    "subscribe-email-param": "E-pošto address za povevanje na newsletter.",
+    "generic-error": "Napaka. Prosimo, poskusi znova kasnejše.",
+    "demo-warn": "Vzamej, da to ni demonstrativni iskušnje!"
+  },
+  "meta": {
+    "title": "Naslov za Stardrive, če ga page ni določil.",
+    "description": "Opis za Stardrive, če ga page ni določil.",
+    "og-site-name": "Stardrive - Astro boilerplate",
+    "slug": "Stardrive - Astro boilerplate",
+    "slogan": "Astro boilerplate",
+    "sub-slogan": "Ustvarjaj super stabilne in hitre web stranice v dobu AI."
+  },
+  "i18n": {
+    "select-language": "Izberi jezik",
+    "current-language": "Trenutni jezik",
+    "noi18n": "Ni prevedeno"
+  },
+  "global-promo": {
+    "top-text-1": "To ni samo tema!",
+    "top-text-2": "To je poln bogat boilerplate in predloga, da hitro zaženeš svojo spletno stran.",
+    "top-cta": "Spoznaj več",
+    "footer-heading": "Prijava",
+    "footer-text": "Izgledaj našo aplikaco. Je brezplačna. Ni potrebne kartica za plačilo.",
+    "footer-cta": "Zaženi"
+  },
+  "pages": {
+    "404": {
+      "title": "404 - Ni bilo najdeno",
+      "message": "Oj. Si našli stran, ki ne obstaja.\\nMožda ni kdaj obstajala ali jo je izbrisali.\\n\\nProsimo, preveri naslov ali se vrni na glavni zaslon."
+    },
+    "home": {
+      "title": "Dobdo na Stardrive - Astro boilerplate",
+      "description": "Stardrive je poln bogat boilerplate in predloga, da hitro zaženeš svojo spletno stran v celo času z vseh potrebnih funkcijah, da delaš uspeh.",
+      "hero-chip": "zadnja verzija",
+      "hero-title": "Moč Astro, ampak na steroidi.",
+      "hero-sub-slogan": "Ustvarjaj super stabilne in hitre web stranice v dobu AI.",
+      "references": "Pokoreno odlično tehnologijo"
+    },
+    "features": {
+      "title": "Funkcija",
+      "description": "Izgledaj močne možnosti Astro Stardrive, ki ga naredi ultimate boilerplate za tvojo naslednjo projekto."
+    },
+    "docs": {
+      "title-install": "Kakšna je instalacija",
+      "description-install": "Spoznaj, kako nastaviti Astro Stardrive in hitro zagon projekta.",
+      "title-configuration": "Konfiguracija",
+      "description-configuration": "Konfiguriraj Astro Stardrive, da odpoveda tvojim potrebam. Spoznaj to korak za korakom.",
+      "title-guide": "Proročilo",
+      "description-guide": "Sleduj proročilo, da si razumeš, kako učinkovito uporabljati Astro Stardrive in njegove mogelijknosti."
+    },
+    "examples": {
+      "title": "Realni primeri",
+      "description": "Izgledaj realne primer web strani, ustvarjene z Astro Stardrive, da si dobiješ izboljšave. Če si sam izdal enostavna povezava (pull request).",
+      "list-label": "Web strani, ustvarjene z Astro Stardrive",
+      "empty": "Jo še ni primerov - bodi prvi, kdo se da na seznam!",
+      "cta": "Dobi seznam"
+    },
+    "faq": {
+      "title": "Pitanja in odgovori",
+      "description": "Najdi odgovore na najpogostija vprašanja o Astro Stardrive. Da, je brezplačno in open source.",
+      "search-placeholder": "Iskanje vprašanj...",
+      "filter-all-categorie": "Vse kategorije",
+      "no-results": "Ni rezultatov, ki ustrezajo tiskemu iskanju."
+    },
+    "about": {
+      "title": "O meni",
+      "description": "Priča za Astro Stardrive - ustvarjen od Jensa, ki ustvarja web strani iz leta 2000."
+    },
+    "contact": {
+      "title": "Kontaktiraj nas",
+      "description": "Pridobivanje v zapu - to je samo za demonstracijske namene - za vprašanja posreduj GitHub.",
+      "intro-text": "Imas vprašanje, idejo ali simply radiš pozdrav? Napiši nam in se we vrnemo v zmaganje takoj, kakor lahko.",
+      "docs-heading": "Ne želiš počevati?",
+      "docs-text": "Večina odgovorov je že v naši dokumentaciji.",
+      "docs-cta": "Pregledaj dokumente",
+      "address-heading": "Naša oficina",
+      "name": "Ime",
+      "name-placeholder": "Tvoje ime",
+      "email-placeholder": "tvoj-email@example.com",
+      "message": "Sporocilo",
+      "message-placeholder": "Kako vam lahko pomagamo?",
+      "send": "Pošlji sporocilo",
+      "success": "Hvala! Tvoja sporocilo je v poti.",
+      "required-note": "Polje je obvezno.",
+      "invalid-email": "Vnesi veljaven e-poštni naslov.",
+      "map-label": "Karta, ki prikazuje naš workspace",
+      "map-pin-title": "Oficialni fizični lanzirni punkt Stardrive",
+      "tool-description": "Pošlji sporocilo company skozi Kontakt formular.",
+      "tool-name-param": "Celotno ime osebe, ki pošlje sporocilo.",
+      "tool-email-param": "E-pošta za odgovor.",
+      "tool-message-param": "Sodzino vsebin sporocila ali vprašanja."
+    },
+    "pricing": {
+      "title": "Naše cene",
+      "description": "Izberi paket, ki odgovara tvojim potrebam. Ne zabližaj! Stardrive je brezplačen - to je samo za demonstracijske namene."
+    },
+    "integration": {
+      "title": "Integracija",
+      "description": "Spoznaj, kako integriraj Astro Stardrive s svojiho orodji in potev.",
+      "intro": "Integriraj svoje omiljene orodja in platforme, da optimaliziraš svoj razvojni tok.",
+      "search-placeholder": "Filtriraj storitve...",
+      "no-results": "Ni storitev, ki ujemata z iskanjem."
+    },
+    "integration-ai": {
+      "title": "AI integracija",
+      "description": "Izgledaj kode assistants, ki vam pomagajo delovati učinkovitejše s Astro Stardrive. Stardrive je že pripravljen, da govori s njimi."
+    },
+    "integration-zapier": {
+      "title": "Zapier integracija",
+      "description": "Spoznaj, kako poveži Astro Stardrive z tisočes aplikacijama z Zapierom za spočitno avtomatizacijo. To je Collection demonstracijskih, ker ni resničnega uporabniškega primera."
+    },
+    "integration-others": {
+      "title": "Ostale integracije",
+      "description": "Izgledaj druge integracije, ki povežo Astro Stardrive s raznim orodji in platformama."
+    },
+    "get-listed": {
+      "title": "Seznan v katalog",
+      "description": "Spoznaj, kako lahko tvojo spletno stran postala realniprimer s povezanim backlinkom na našo spletno stran.",
+      "intro": "Ustvaril si spletno stran s Astro Stardrive? Uh, odlično - dodaj jo v galerijo primerov. To izhaja iz malega pull requesta.",
+      "steps-heading": "Kako deluje",
+      "step-1-title": "Odpri datoteko z primeri",
+      "step-1-text": "Vse vnosnike živijo v eni datoteki JSON v repositoryu: {file}.",
+      "step-2-title": "Uredi na GitHub",
+      "step-2-text": "Dodaj objekt s svojim {fields}. Poveč, da lahko forkirai repozitorij, odpiranje Codespace je najprosta - uredi trütze v brskalniku in toris spremembe.",
+      "step-3-title": "Izgri pull request",
+      "step-3-text": "Odpri PR iz svojega forka ali Codespace. Mi pregledujmo novo vnese redno.",
+      "step-2-note": "V primeru želite, lahko dodate prevede za naslov, opis in url pod ključem \"i18n\" (npr. \"de\", \"es\", \"fr\"). Angleški jezik je vedenoten in služi kot opozorilo za manjkajoce prevede.",
+      "requirements-heading": "Preizkus zaodo",
+      "req-generator-title": "Zahtevaj generator taga",
+      "req-generator-text": "Tvoja spletna stran mora izpostaviti balizo {tag} v svoji glavi. Ta je avtomatsko prisoten, če si ga ne izriset - c is tako, kako preverimo, da spletna stran rese čez Stardrive.",
+      "req-generator-warning": "Opaz: nanok, ko ta tag ni izrisen, bo tvoja vnese izbrisan iz listed.",
+      "req-content-title": "Samo Primerjiva vsebina",
+      "req-content-text": "Ne ponujamo povezav na strane, vsebino, ki ni ustrezala otroke - kot so hazard, spolno/pornografsko ali alkohol vezana vsebino.",
+      "alt-title": "Ne sprašaj PR?",
+      "alt-text": "Povej svoj website v razdelitve Discussions na GitHub. Mi redno pregledujmo in vnese sami - vendar je to spornejše, kot če ga narediš preko pull requesta, in stvari bi lahko minile.",
+      "alt-link": "Postavi na GitHub",
+      "cta": "Odpri repozitorij na GitHub",
+      "back-to-examples": "Pogledaj primeri"
+    },
+    "legal-notice": {
+      "title": "Pravno sporočilo",
+      "intro": "Informacije v skladu s členom 5 TMG in členom 55 para. 2 RStV"
+    },
+    "privacy-policy": {
+      "title": "Politika prizadevanja za privatnost"
+    },
+    "blog": {
+      "title": "Blog",
+      "description": "Preberi najnovejše članki o Astro, web razvoj in še več."
+    },
+    "events": {
+      "title": "Dogodka",
+      "description": "Izgledaj najslejšeDogodka, konferencije in sestanke, ki so povezane z Astro Stardrive in web razvojom.",
+      "1": "Januar",
+      "2": "Februar",
+      "3": "Marec",
+      "4": "April",
+      "5": "Maj",
+      "6": "Junij",
+      "7": "Julij",
+      "8": "Avgust",
+      "9": "September",
+      "10": "Oktober",
+      "11": "November",
+      "12": "December",
+      "select-year": "Izberi leto",
+      "when": "Kdaj",
+      "where": "Kje",
+      "recurring": "Ponovljivo",
+      "following-events": "Slednja dogodka"
+    },
+    "signup": {
+      "title": "Prijava",
+      "description": "Ta stran je za tvojo podpisovanje - kot ustrezna oblik ali presmerovanj na drugo stran. To je samo za demonstracijske namene, ker ni resničnega signup forme.",
+      "intro": "Tukaj bi si morali podpisati. V boilerplate Stardrive je namenjeno prazno - kako ga pretvorbi v točka za pretvarjanje, je celo po tebi.",
+      "option-form-title": "Vstavi oblik",
+      "option-form-text": "Vstavi resnično podpisno ali potentialno obliko in jo povezi s backendom ali e-poštno storitvijo.",
+      "option-marketing-title": "Dodaj marketingovo vsebinjo",
+      "option-marketing-text": "Prosaj s copy, testimonials ali feature highlightom za povečanje pretvaranj.",
+      "option-redirect-title": "Presmeri na web app",
+      "option-redirect-text": "Pošljevoje vse do svojega natančneje aplikacije ali zunanjega signup toka.",
+      "demo-note": "Ta stran obstaja samo za demonstracijske namene - ni delujočega signup forme."
+    },
+    "rss": {
+      "title": "Astro Stardrive | RSS feed",
+      "description": "Povej se na RSS feed, da ostaneš na danih z najnovejšimi članki."
+    },
+    "tags-t": {
+      "astro": "Astro",
+      "js": "JavaScript",
+      "ts": "TypeScript",
+      "cloudflare": "Cloudflare",
+      "react": "React",
+      "vue": "Vue",
+      "svelte": "Svelte",
+      "solidjs": "SolidJS",
+      "tailwind": "Tailwind CSS",
+      "directus": "Directus",
+      "supabase": "Supabase",
+      "github": "GitHub"
+    },
+    "categories-t": {
+      "web-development": "Web programiranje",
+      "infrastructure": "Infrastruktura",
+      "ai": "Zgodovje",
+      "it-security": "IT varnost",
+      "productivity": "Produktivnost",
+      "billing": "Računovodstvo",
+      "features": "Funkcija",
+      "troubleshooting": "Reševanje problemov",
+      "general": "Splošno",
+      "technical": "Tehnično",
+      "support": "Sporočilo"
+    },
+    "ads": {
+      "demo": {
+        "title": "Besplaten Zlatni Bog",
+        "description": "Izgledaj novo načino, kako najdi srečo."
+      }
+    }
+  },
+  "rss": {
+    "title": "Astro Stardrive | RSS Feed",
+    "description": "Povej se na RSS Feed, da ostaneš na danih z najnovejšimi članki."
+  },
+  "ads": {
+    "demo": {
+      "title": "Besplaten Zlatni Bog",
+      "description": "Izgledaj novo načino, kako najdi srečo."
+    }
+  }
+}

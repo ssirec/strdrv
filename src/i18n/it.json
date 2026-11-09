@@ -1,0 +1,297 @@
+{
+  "nav": {
+    "home": "Home",
+    "features": "Funzionalità",
+    "docs": "Docs",
+    "docs-installation": "Installazione",
+    "docs-configuration": "Configurazione",
+    "docs-guide": "Guida",
+    "docs-guide-explainer": "Come lavorare con esso",
+    "examples": "Esempi",
+    "blog": "Blog",
+    "faq": "FAQ",
+    "events": "Eventi",
+    "about": "Chi siamo",
+    "contact": "Contatto",
+    "pricing": "Prezzi",
+    "integration": "Integrazione",
+    "get-listed": "Segnalato",
+    "status": "Stato",
+    "legal-notice": "Nota legale",
+    "privacy-policy": "Privacy policy"
+  },
+  "labels": {
+    "ad": "Annuncio",
+    "signup": "Iscriviti",
+    "learn-more": "Scopri di più",
+    "ask-ai": "Chiedi AI di noi",
+    "more-categorie": "Altre categorie",
+    "find-other-service": "Trova un altro servizio",
+    "get-started": "Inizia",
+    "explore-features": "Esplora funzionalità",
+    "author": "Autore",
+    "published": "Pubblicato",
+    "updated": "Aggiornato",
+    "by_category": "per categoria",
+    "by_tag": "per tag",
+    "tags": "Tag",
+    "tag": "Tag",
+    "categories": "Categorie",
+    "category": "Categoria",
+    "no-entries": "Nessun risultato",
+    "featured": "Evidenziato",
+    "continue-reading": "Continua a leggere",
+    "share-article": "Condividi articolo",
+    "share-email-subject": "Dai un'occhiata a questo articolo",
+    "email": "Email",
+    "toc": "Indice",
+    "min-read": "min lettura",
+    "to-start": "All'inizio",
+    "back": "Indietro",
+    "back-overview": "Panoramica",
+    "back-all-articles": "Tutti gli articoli",
+    "back-all-events": "Tutti gli eventi",
+    "pagination": "Paginazione",
+    "page": "Pagina",
+    "prev": "Precedente",
+    "next": "Successivo",
+    "open-menu": "Apri menu",
+    "close-menu": "Chiudi menu",
+    "change-light-mode": "Cambia modalità luce/scuro",
+    "offering": "Offerta",
+    "company": "Azienda",
+    "resources": "Risorse",
+    "subscribe": "Iscriviti alla nostra newsletter",
+    "subscribe-tool": "Iscrivi un indirizzo email alla newsletter.",
+    "subscribe-email-param": "L'indirizzo email a cui iscrivere alla newsletter.",
+    "generic-error": "Si è verificato un errore. Riprova più tardi.",
+    "demo-warn": "Fai attenzione: questo non sta inviando nulla nella dimostrazione!"
+  },
+  "meta": {
+    "title": "Titolo di riserva per Stardrive, se non fornito dalla pagina stessa.",
+    "description": "Descrizione di riserva per Stardrive, se non fornita dalla pagina stessa.",
+    "og-site-name": "Stardrive - il boilerplate Astro",
+    "slug": "Stardrive - il boilerplate Astro",
+    "slogan": "Il boilerplate Astro",
+    "sub-slogan": "Crea siti web super stabili e veloci nell'era dell'AI."
+  },
+  "i18n": {
+    "select-language": "Seleziona la lingua",
+    "current-language": "Attuale",
+    "noi18n": "Non tradotto"
+  },
+  "global-promo": {
+    "top-text-1": "Non è solo un tema!",
+    "top-text-2": "È un completo boilerplate e modello per mettere online il tuo sito in men che non si dica.",
+    "top-cta": "Scopri di più",
+    "footer-heading": "Registrati ora",
+    "footer-text": "Esplora la nostra app. È gratuita. Non è richiesta carta di credito.",
+    "footer-cta": "Inizia"
+  },
+  "pages": {
+    "404": {
+      "title": "404 - Non trovato",
+      "message": "Oops. Hai trovato una pagina che non esiste.\\nForse non è mai esistita o è stata cancellata.\\n\\nPer favore controlla l'URL o torna alla pagina principale."
+    },
+    "home": {
+      "title": "Benvenuto su Stardrive - il boilerplate Astro",
+      "description": "Stardrive è un completo boilerplate e modello per mettere online il tuo sito in men che non si dica con tutte le funzionalità di cui hai bisogno per avere successo.",
+      "hero-chip": "Ultima versione",
+      "hero-title": "Il potere di Astro, ma potenziato.",
+      "hero-sub-slogan": "Crea super stabili e veloci siti web nell'era dell'AI.",
+      "references": "Potenziato da tecnologie fantastiche"
+    },
+    "features": {
+      "title": "Funzionalità",
+      "description": "Esplora le potenti funzionalità di Astro Stardrive che lo rendono il boilerplate definitivo per il tuo prossimo progetto."
+    },
+    "docs": {
+      "title-install": "Come installare",
+      "description-install": "Impara come installare Astro Stardrive e avvia rapidamente il tuo progetto.",
+      "title-configuration": "Configurazione",
+      "description-configuration": "Configura Astro Stardrive per adattarlo alle esigenze del tuo progetto. Scopri passo dopo passo.",
+      "title-guide": "Guida",
+      "description-guide": "Segui la guida per capire come utilizzare efficacemente Astro Stardrive e le sue funzionalità."
+    },
+    "examples": {
+      "title": "Esempi reali",
+      "description": "Scopri esempi reali di siti web creati con Astro Stardrive per trarre ispirazione - e se ne hai uno tuo, aggiungilo alla lista con una veloce pull request.",
+      "list-label": "Siti web creati con Astro Stardrive",
+      "empty": "Nessun esempio finora - sii il primo a essere elencato!",
+      "cta": "Fatti elencare"
+    },
+    "faq": {
+      "title": "FAQ",
+      "description": "Trova le risposte alle domande più comuni su Astro Stardrive. Sì, è gratuito e open source.",
+      "search-placeholder": "Cerca domande...",
+      "filter-all-categorie": "Tutte le categorie",
+      "no-results": "Nessuna domanda corrisponde alla tua ricerca."
+    },
+    "about": {
+      "title": "Chi siamo",
+      "description": "La storia dietro Astro Stardrive - creato da Jens, che realizza siti web dall'anno 2000."
+    },
+    "contact": {
+      "title": "Contattaci",
+      "description": "Nessuno - questo è solo a scopo dimostrativo - usa GitHub per le richieste.",
+      "intro-text": "Hai una domanda, un'idea o vuoi semplicemente dire ciao? Scrivici e ti risponderemo presto.",
+      "docs-heading": "Non vuoi aspettare?",
+      "docs-text": "La maggior parte delle risposte è già nella nostra documentazione.",
+      "docs-cta": "Visualizza la documentazione",
+      "address-heading": "Il nostro ufficio",
+      "name": "Nome",
+      "name-placeholder": "Il tuo nome",
+      "email-placeholder": "tu@example.com",
+      "message": "Messaggio",
+      "message-placeholder": "Come possiamo aiutarti?",
+      "send": "Invia messaggio",
+      "success": "Grazie! Il tuo messaggio è in viaggio.",
+      "required-note": "Questo campo è obbligatorio.",
+      "invalid-email": "Per favore inserisci un indirizzo email valido.",
+      "map-label": "Mappa che mostra la nostra posizione in ufficio",
+      "map-pin-title": "Lancio fisico ufficiale Stardrive",
+      "tool-description": "Invia un messaggio all'azienda tramite il modulo di contatto.",
+      "tool-name-param": "Il nome completo della persona che invia il messaggio.",
+      "tool-email-param": "L'indirizzo email per la risposta.",
+      "tool-message-param": "Il contenuto del messaggio o della richiesta."
+    },
+    "pricing": {
+      "title": "I nostri prezzi",
+      "description": "Scegli il piano che soddisfa le tue esigenze. Non preoccuparsi! Stardrive è gratuito - questo è solo a scopo dimostrativo."
+    },
+    "integration": {
+      "title": "Integrazione",
+      "description": "Impara come integrare Astro Stardrive con i tuoi strumenti e flussi di lavoro esistenti.",
+      "intro": "Integra i tuoi strumenti e platform preferiti per potenziare il tuo flusso di lavoro di sviluppo.",
+      "search-placeholder": "Filtra i servizi...",
+      "no-results": "Nessun servizio corrisponde alla tua ricerca."
+    },
+    "integration-ai": {
+      "title": "Integrazione AI",
+      "description": "Scopri gli assistenti di coding per lavorare più efficacemente con Astro Stardrive. Stardrive è già preparato per comunicare con loro."
+    },
+    "integration-zapier": {
+      "title": "Integrazione Zapier",
+      "description": "Impara come collegare Astro Stardrive a migliaia di app usando Zapier per automazione fluida. È più una raccolta di dimostrazioni, since non c'è un caso d'uso reale per questo."
+    },
+    "integration-others": {
+      "title": "Altre integrazioni",
+      "description": "Scopri altre integrazioni che collegano Astro Stardrive con vari strumenti e platform."
+    },
+    "get-listed": {
+      "title": "Segnalato",
+      "description": "Impara come far segnalare il tuo sito web come esempio reale con backlink sul nostro sito web.",
+      "intro": "Hai creato il tuo sito con Astro Stardrive? Fantastico - aggiungilo alla galleria di esempi. Richiede solo una piccola pull request.",
+      "steps-heading": "Come funziona",
+      "step-1-title": "Apri il file dei dati degli esempi",
+      "step-1-text": "Tutte le voci vivono in un singolo file JSON nel repository: {file}.",
+      "step-2-title": "Modificalo su GitHub",
+      "step-2-text": "Aggiungi un oggetto con i tuoi {fields}. Puoi forkare il repo, ma aprire un Codespace è il modo più semplice - modifica direttamente nel browser e conferma.",
+      "step-3-title": "Crea una pull request",
+      "step-3-text": "Apri una PR dal tuo fork o Codespace. Esaminiamo regolarmente le nuove entrate.",
+      "step-2-note": "Opzionalmente, puoi aggiungere traduzioni per titolo, descrizione e url sotto una chiave \"i18n\" (es. \"de\", \"es\", \"fr\"). L'inglese è sempre richiesto e fa da fallback per qualsiasi traduzione mancante.",
+      "requirements-heading": "Requisiti per l'approvazione",
+      "req-generator-title": "Mantieni il tag generator",
+      "req-generator-text": "Il tuo sito deve esporre il tag {tag} nel suo <head>. È presente automaticamente a meno che non l'abbia rimosso - è così che verifichiamo che un sito funzioni davvero con Stardrive.",
+      "req-generator-warning": "Nota: il momento in cui questo tag viene rimosso, la tua entrata verrà rimossa dalla lista.",
+      "req-content-title": "Solo contenuti adatti a tutta la famiglia",
+      "req-content-text": "Non permettiamo link a pagine che contengono contenuti inadatti ai bambini - come gioco d'azzardo, contenuti sessuali/pornografici o legati all'alcol.",
+      "alt-title": "A tuo agio con una PR?",
+      "alt-text": "Puoi anche pubblicare il tuo sito nella sezione Discussions su GitHub. Noi lo scansioniamo di tanto in tanto e aggiungiamo noi stessi le entrate - tuttavia, è più lento di una pull request e le cose potrebbero essere trascurate.",
+      "alt-link": "Pubblica su GitHub",
+      "cta": "Apri il repository su GitHub",
+      "back-to-examples": "Torna agli esempi"
+    },
+    "legal-notice": {
+      "title": "Nota legale",
+      "intro": "Informazioni in conformità con l'articolo 5 del TG e l'articolo 55 comma 2 del RStV"
+    },
+    "privacy-policy": {
+      "title": "Privacy policy"
+    },
+    "blog": {
+      "title": "Blog",
+      "description": "Leggi i nostri ultimi articoli su Astro, sviluppo web e molto altro."
+    },
+    "events": {
+      "title": "Eventi",
+      "description": "Scopri eventi imminenti, conferenze e meeting legati ad Astro Stardrive e allo sviluppo web.",
+      "1": "Gennaio",
+      "2": "Febbraio",
+      "3": "Marzo",
+      "4": "Aprile",
+      "5": "Maggio",
+      "6": "Giugno",
+      "7": "Luglio",
+      "8": "Agosto",
+      "9": "Settembre",
+      "10": "Ottobre",
+      "11": "Novembre",
+      "12": "Dicembre",
+      "select-year": "Seleziona anno",
+      "when": "Quando",
+      "where": "Dove",
+      "recurring": "Ricorrente",
+      "following-events": "Eventi successivi"
+    },
+    "signup": {
+      "title": "Iscriviti",
+      "description": "Questa è la pagina dove i visitatori si iscrivono. Come rispettivo modulo o reindirizzamento a un'altra pagina. Questo è solo a scopo dimostrativo, since non c'è un vero modulo di iscrizione qui.",
+      "intro": "Qui i tuoi visitatori si iscriverebbero. Nel boilerplate Stardrive è intenzionalmente lasciato vuoto - come lo trasformi in un punto di conversione è interamente a te.",
+      "option-form-title": "Inserisci un modulo",
+      "option-form-text": "Inserisci un vero modulo di iscrizione o lead e collegalo al tuo backend o a un servizio di email.",
+      "option-marketing-title": "Aggiungi contenuto di marketing",
+      "option-marketing-text": "Vendi i benefici con copy, testimonianze o un highlight di funzionalità per aumentare le conversioni.",
+      "option-redirect-title": "Reindirizza a un web app",
+      "option-redirect-text": "Invia le persone direttamente alla tua app dedicata o a un flusso di iscrizione esterno.",
+      "demo-note": "Questa pagina esiste solo a scopo dimostrativo - non c'è un modulo di iscrizione funzionante qui."
+    },
+    "rss": {
+      "title": "Astro Stardrive | RSS Feed",
+      "description": "Iscriviti al RSS Feed per restare aggiornato con gli ultimi articoli."
+    },
+    "tags-t": {
+      "astro": "Astro",
+      "js": "JavaScript",
+      "ts": "TypeScript",
+      "cloudflare": "Cloudflare",
+      "react": "React",
+      "vue": "Vue",
+      "svelte": "Svelte",
+      "solidjs": "SolidJS",
+      "tailwind": "Tailwind CSS",
+      "directus": "Directus",
+      "supabase": "Supabase",
+      "github": "GitHub"
+    },
+    "categories-t": {
+      "web-development": "Sviluppo web",
+      "infrastructure": "Infrastruttura",
+      "ai": "AI",
+      "it-security": "IT Security",
+      "productivity": "Produttività",
+      "billing": "Fatturazione",
+      "features": "Funzionalità",
+      "troubleshooting": "Risoluzione problemi",
+      "general": "Generale",
+      "technical": "Tecnico",
+      "support": "Supporto"
+    },
+    "ads": {
+      "demo": {
+        "title": "Arcobaleno Gold gratuito",
+        "description": "Scopri il nuovo modo di trovare la fortuna."
+      }
+    }
+  },
+  "rss": {
+    "title": "Astro Stardrive | RSS Feed",
+    "description": "Iscriviti al RSS Feed per restare aggiornato con gli ultimi articoli."
+  },
+  "ads": {
+    "demo": {
+      "title": "Arcobaleno Gold gratuito",
+      "description": "Scopri il nuovo modo di trovare la fortuna."
+    }
+  }
+}

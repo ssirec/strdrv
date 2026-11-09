@@ -8,6 +8,8 @@ import enStrings from './src/i18n/en.json' with { type: 'json' };
 import deStrings from './src/i18n/de.json' with { type: 'json' };
 import frStrings from './src/i18n/fr.json' with { type: 'json' };
 import esStrings from './src/i18n/es.json' with { type: 'json' };
+import slStrings from './src/i18n/sl.json' with { type: 'json' };
+import itStrings from './src/i18n/it.json' with { type: 'json' };
 
 export const themeConfig: ThemeConfig = {
   // `import.meta.env?.` is guarded because this file is also imported from `ec.config.mjs`,
@@ -37,21 +39,25 @@ export const themeConfig: ThemeConfig = {
   },
 
   // I18n
-  i18n: {
-    defaultLocale: 'en',
-    locales: ['en', 'de', 'fr', 'es'],
-    languages: {
-      en: 'English',
-      de: 'Deutsch',
-      fr: 'Français',
-      es: 'Español',
-    },
-    languageModules: {
-      en: enStrings,
-      de: deStrings,
-      fr: frStrings,
-      es: esStrings,
-    },
+    i18n: {
+      defaultLocale: 'en',
+      locales: ['en', 'de', 'fr', 'es', 'sl', 'it'],
+      languages: {
+        en: 'English',
+        de: 'Deutsch',
+        fr: 'Français',
+        es: 'Español',
+        sl: 'Slovenščina',
+        it: 'Italiano',
+      },
+      languageModules: {
+        en: enStrings,
+        de: deStrings,
+        fr: frStrings,
+        es: esStrings,
+        sl: slStrings,
+        it: itStrings,
+      },
     translatedStructuredData: {
       de: {
         author: {
