@@ -1,13 +1,242 @@
----
-import Layout from "@layouts/default.astro";
-import HomeContent from "@components/home/home-content.astro";
-import { useTranslations } from "@utils/i18n";
-import { themeConfig } from '~/theme.config';
 
-const locale = themeConfig.i18n.defaultLocale;
-const t = useTranslations(locale);
+---
+const title = "MEDIASERVIS – SIRSA d.o.o. | Nova Gorica";
+const description =
+  "MEDIASERVIS – SIRSA d.o.o., Ulica Tolminskih puntarjev 4, Nova Gorica. Kontaktirajte nas prek spletnega klepeta ali nas obiščite.";
 ---
 
-<Layout isHome header={{ overlay: true, scrollDownThreshold: 1000 }} title={t('pages.home.title')} description={t('pages.home.description')} noTitleSlug noContainer>
-  <HomeContent {locale} />
-</Layout>
+<!doctype html>
+<html lang="sl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://mediaservis.si/" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content="https://mediaservis.si/" />
+
+    <meta name="theme-color" content="#14283f" />
+
+    <!-- Google Ads tag -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=AW-18538263500"
+    ></script>
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'AW-18538263500');
+    </script>
+
+    <!-- Tawk.to embedded chat -->
+    <script is:inline>
+      var Tawk_API = Tawk_API || {};
+      var Tawk_LoadStart = new Date();
+      Tawk_API.embedded = 'tawk_56c73659b74a0813627d275c';
+
+      (function() {
+        var s1 = document.createElement("script");
+        var s0 = document.getElementsByTagName("script")[0];
+        s1.async = true;
+        s1.src = 'https://embed.tawk.to/56c73659b74a0813627d275c/1gsshkkuq';
+        s1.charset = 'UTF-8';
+        s1.setAttribute('crossorigin', '*');
+        s0.parentNode.insertBefore(s1, s0);
+      })();
+    </script>
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background: #f5f7fa;
+        color: #253347;
+        line-height: 1.6;
+      }
+
+      header {
+        background: #14283f;
+        color: white;
+        padding: 24px 20px;
+      }
+
+      .container {
+        width: min(100% - 36px, 1000px);
+        margin: auto;
+      }
+
+      .brand {
+        font-size: 27px;
+        font-weight: 800;
+        letter-spacing: 1px;
+      }
+
+      .subtitle {
+        color: #b8c9db;
+        font-size: 12px;
+        letter-spacing: 2px;
+      }
+
+      main {
+        padding: 65px 0;
+      }
+
+      h1 {
+        font-size: clamp(32px, 5vw, 48px);
+        line-height: 1.15;
+        color: #14283f;
+        margin: 0 0 18px;
+      }
+
+      h2 {
+        color: #14283f;
+        font-size: 25px;
+      }
+
+      .intro {
+        font-size: 18px;
+        max-width: 650px;
+        color: #526174;
+      }
+
+      .card {
+        background: white;
+        border-radius: 14px;
+        padding: 28px;
+        margin-top: 28px;
+        box-shadow: 0 4px 20px rgba(20,40,63,.06);
+      }
+
+      .button {
+        display: inline-block;
+        background: #1769aa;
+        color: white;
+        text-decoration: none;
+        padding: 13px 22px;
+        border-radius: 8px;
+        font-weight: 600;
+        margin-top: 12px;
+      }
+
+      .button:hover {
+        background: #105184;
+      }
+
+      .map {
+        width: 100%;
+        height: 380px;
+        border: 0;
+        border-radius: 10px;
+        margin-top: 15px;
+      }
+
+      .chat {
+        width: 100%;
+        height: 600px;
+        margin-top: 20px;
+      }
+
+      footer {
+        background: #14283f;
+        color: #c6d1dd;
+        padding: 25px 15px;
+        text-align: center;
+        font-size: 13px;
+      }
+
+      @media (max-width: 600px) {
+        main {
+          padding: 38px 0;
+        }
+
+        .card {
+          padding: 20px;
+        }
+
+        .map {
+          height: 300px;
+        }
+
+        .chat {
+          height: 550px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <div class="brand">MEDIASERVIS</div>
+        <div class="subtitle">SIRSA d.o.o. · NOVA GORICA</div>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <h1>Dobrodošli v MEDIASERVIS</h1>
+
+        <p class="intro">
+          Za informacije o naši ponudbi in storitvah nas kontaktirajte
+          prek spletnega klepeta ali nas obiščite v Novi Gorici.
+        </p>
+
+        <section class="card">
+          <h2>Kje nas najdete?</h2>
+
+          <strong>MEDIASERVIS – SIRSA d.o.o.</strong>
+          <p>
+            Ulica Tolminskih puntarjev 4<br />
+            5000 Nova Gorica<br />
+            Slovenija
+          </p>
+
+          <a
+            class="button"
+            href="https://www.google.com/maps/dir/?api=1&destination=Ulica+Tolminskih+puntarjev+4%2C+5000+Nova+Gorica%2C+Slovenija"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Odpri navigacijo
+          </a>
+
+          <iframe
+            class="map"
+            src="https://maps.google.com/maps?q=Ulica%20Tolminskih%20puntarjev%204%2C%205000%20Nova%20Gorica%2C%20Slovenija&output=embed"
+            loading="lazy"
+            allowfullscreen
+            referrerpolicy="no-referrer-when-downgrade"
+            title="MEDIASERVIS – lokacija v Novi Gorici"
+          ></iframe>
+        </section>
+
+        <section class="card">
+          <h2>Kontaktirajte nas</h2>
+          <p>
+            Imate vprašanje? Pišite nam prek spodnjega spletnega klepeta.
+          </p>
+
+          <div
+            id="tawk_56c73659b74a0813627d275c"
+            class="chat"
+          ></div>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      © 2026 SIRSA d.o.o. · MEDIASERVIS
+    </footer>
+  </body>
+</html>
