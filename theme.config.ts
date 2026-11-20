@@ -69,8 +69,8 @@ export const themeConfig: ThemeConfig = {
     imageFallback: true,
     gridView: true,
     textOverImage: false,
-    categories: true, // if set false, make sure to also remove category directories under /pages
-    tags: true, // if set false, make sure to also remove tag directories under /pages
+    categories: true,
+    tags: true,
     entriesPerPage: 4,
     tocMaxDepth: 3,
     defaults: {
@@ -80,8 +80,7 @@ export const themeConfig: ThemeConfig = {
       },
     },
     social: {
-      // default values - can be overridden at the Single component level
-      xHandle: '', // to be added as "via @handle" in the tweet
+      xHandle: '',
       buttons: {
         email: true,
         facebook: true,
@@ -121,7 +120,6 @@ export const themeConfig: ThemeConfig = {
 
   // content/events settings
   events: {
-    // you can also dynamically integrate events from your Add to Calendar PRO account (https://add-to-calendar-pro.com/), having your API key set as environment variable ADD_TO_CALENDAR_PRO_API_KEY.
     dynamicEvents: {
       pullFromAddToCalendarPro: false,
       filterBy: {
@@ -135,7 +133,8 @@ export const themeConfig: ThemeConfig = {
   // LLM and coding assistant settings
   llms: {
     autoGeneration: true,
-    intro: 'MediaServis Nova Gorica je servis mobilnih telefonov (med drugim iPhone): diagnostika, popravila in pomoč pri težavah z napravami. Lokacija in navodila za pot so na spletni strani.',
+    intro:
+      'MediaServis Nova Gorica je servis mobilnih telefonov (med drugim iPhone): diagnostika, popravila in pomoč pri težavah z napravami. Lokacija in navodila za pot so na spletni strani.',
     excludePagesPattern: ['/integration/**'],
     includePages: [],
     addArticles: 'selected',
@@ -143,5 +142,6 @@ export const themeConfig: ThemeConfig = {
     addFAQ: 'all',
   },
 
-  askAiTrigger: 'Povej mi več o servisu MediaServis Nova Gorica: katere storitve ponuja in kako ga obiščem?',
+  askAiTrigger:
+    'Povej mi več o servisu MediaServis Nova Gorica: katere storitve ponuja in kako ga obiščem?',
 };
