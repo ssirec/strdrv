@@ -1,7 +1,7 @@
 ---
 import Layout from "@layouts/default.astro";
 import Headline from "@components/headline.astro";
-import ContactForm from "@components/contact/contact-form.astro";
+import TawkChat from "@components/tawk-chat.astro";
 import ContactMap from "@components/contact/contact-map.astro";
 import { Icon } from "astro-icon/components";
 import { useTranslations, getLocaleUrl } from "@utils/i18n";
@@ -25,9 +25,9 @@ const t = useTranslations(locale);
   <p class="mb-10 max-w-2xl text-lg text-stone-600 dark:text-stone-300">{t('pages.contact.intro-text')}</p>
 
   <div class="flex flex-col gap-12 lg:flex-row lg:gap-16">
-    <!-- Contact form -->
-    <div class="lg:flex-1">
-      <ContactForm {locale} />
+    <!-- Live chat -->
+    <div class="w-full max-w-2xl lg:flex-1">
+      <TawkChat />
     </div>
 
     <!-- Docs / address -->
@@ -44,13 +44,13 @@ const t = useTranslations(locale);
       <div class="flex flex-col gap-1">
         <h3 class="font-semibold">{t('pages.contact.address-heading')}</h3>
         <address class="text-sm text-stone-600 not-italic dark:text-stone-300">
-          <strong>ACME Inc.</strong>
+          <strong>MediaServis Nova Gorica</strong>
           <br />
-          Beta-Str. 10a
+          Ulica tolminskih puntarjev 4
           <br />
-          85774 Unterf&ouml;hring
+          5000 Nova Gorica
           <br />
-          Germany
+          Slovenija
         </address>
         <ContactMap {locale} />
       </div>
