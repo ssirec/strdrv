@@ -1,8 +1,10 @@
-
 ---
+import ContactMap from "@components/contact/contact-map.astro";
+
 const title = "MEDIASERVIS – SIRSA d.o.o. | Nova Gorica";
 const description =
   "MEDIASERVIS – SIRSA d.o.o., Ulica Tolminskih puntarjev 4, Nova Gorica. Kontaktirajte nas prek spletnega klepeta ali nas obiščite.";
+const chatUrl = "https://tawk.to/chat/56c73659b74a0813627d275c/1gsshkkuq";
 ---
 
 <!doctype html>
@@ -35,27 +37,8 @@ const description =
       gtag('config', 'AW-18538263500');
     </script>
 
-    <!-- Tawk.to embedded chat -->
-    <script is:inline>
-      var Tawk_API = Tawk_API || {};
-      var Tawk_LoadStart = new Date();
-      Tawk_API.embedded = 'tawk_56c73659b74a0813627d275c';
-
-      (function() {
-        var s1 = document.createElement("script");
-        var s0 = document.getElementsByTagName("script")[0];
-        s1.async = true;
-        s1.src = 'https://embed.tawk.to/56c73659b74a0813627d275c/1gsshkkuq';
-        s1.charset = 'UTF-8';
-        s1.setAttribute('crossorigin', '*');
-        s0.parentNode.insertBefore(s1, s0);
-      })();
-    </script>
-
     <style>
-      * {
-        box-sizing: border-box;
-      }
+      * { box-sizing: border-box; }
 
       body {
         margin: 0;
@@ -65,32 +48,15 @@ const description =
         line-height: 1.6;
       }
 
-      header {
-        background: #14283f;
-        color: white;
-        padding: 24px 20px;
-      }
+      header { background: #14283f; color: white; padding: 24px 20px; }
 
-      .container {
-        width: min(100% - 36px, 1000px);
-        margin: auto;
-      }
+      .container { width: min(100% - 36px, 1000px); margin: auto; }
 
-      .brand {
-        font-size: 27px;
-        font-weight: 800;
-        letter-spacing: 1px;
-      }
+      .brand { font-size: 27px; font-weight: 800; letter-spacing: 1px; }
 
-      .subtitle {
-        color: #b8c9db;
-        font-size: 12px;
-        letter-spacing: 2px;
-      }
+      .subtitle { color: #b8c9db; font-size: 12px; letter-spacing: 2px; }
 
-      main {
-        padding: 65px 0;
-      }
+      main { padding: 65px 0; }
 
       h1 {
         font-size: clamp(32px, 5vw, 48px);
@@ -99,16 +65,9 @@ const description =
         margin: 0 0 18px;
       }
 
-      h2 {
-        color: #14283f;
-        font-size: 25px;
-      }
+      h2 { color: #14283f; font-size: 25px; }
 
-      .intro {
-        font-size: 18px;
-        max-width: 650px;
-        color: #526174;
-      }
+      .intro { font-size: 18px; max-width: 650px; color: #526174; }
 
       .card {
         background: white;
@@ -129,23 +88,19 @@ const description =
         margin-top: 12px;
       }
 
-      .button:hover {
-        background: #105184;
-      }
+      .button:hover { background: #105184; }
 
-      .map {
+      /* Sizing for ContactMap — its Tailwind classes don't apply on this
+         standalone page, so set the box explicitly. */
+      #contact-map {
         width: 100%;
         height: 380px;
-        border: 0;
-        border-radius: 10px;
         margin-top: 15px;
+        border-radius: 10px;
+        overflow: hidden;
       }
 
-      .chat {
-        width: 100%;
-        height: 600px;
-        margin-top: 20px;
-      }
+      .chat { width: 100%; height: 600px; margin-top: 20px; }
 
       footer {
         background: #14283f;
@@ -156,21 +111,10 @@ const description =
       }
 
       @media (max-width: 600px) {
-        main {
-          padding: 38px 0;
-        }
-
-        .card {
-          padding: 20px;
-        }
-
-        .map {
-          height: 300px;
-        }
-
-        .chat {
-          height: 550px;
-        }
+        main { padding: 38px 0; }
+        .card { padding: 20px; }
+        #contact-map { height: 300px; }
+        .chat { height: 550px; }
       }
     </style>
   </head>
@@ -211,32 +155,43 @@ const description =
             Odpri navigacijo
           </a>
 
-          <iframe
-            class="map"
-            src="https://maps.google.com/maps?q=Ulica%20Tolminskih%20puntarjev%204%2C%205000%20Nova%20Gorica%2C%20Slovenija&output=embed"
-            loading="lazy"
-            allowfullscreen
-            referrerpolicy="no-referrer-when-downgrade"
-            title="MEDIASERVIS – lokacija v Novi Gorici"
-          ></iframe>
+          <ContactMap locale="sl" />
         </section>
 
         <section class="card">
           <h2>Kontaktirajte nas</h2>
-          <p>
-            Imate vprašanje? Pišite nam prek spodnjega spletnega klepeta.
-          </p>
+          <p>Imate vprašanje? Pišite nam prek spletnega klepeta.</p>
 
-          <div
-            id="tawk_56c73659b74a0813627d275c"
-            class="chat"
-          ></div>
+          <a
+            class="button"
+            href={chatUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Odpri klepet
+          </a>
+
+          <div id="tawk_56c73659b74a0813627d275c" class="chat"></div>
         </section>
       </div>
     </main>
 
-    <footer>
-      © 2026 SIRSA d.o.o. · MEDIASERVIS
-    </footer>
+    <footer>© 2026 SIRSA d.o.o. · MEDIASERVIS</footer>
+
+    <!-- Tawk.to embed: must come after the div above -->
+    <script is:inline>
+      var Tawk_API = Tawk_API || {};
+      var Tawk_LoadStart = new Date();
+      Tawk_API.embedded = 'tawk_56c73659b74a0813627d275c';
+
+      (function () {
+        var s1 = document.createElement("script");
+        var s0 = document.getElementsByTagName("script")[0];
+        s1.async = true;
+        s1.src = 'https://embed.tawk.to/56c73659b74a0813627d275c/1gsshkkuq';
+        s1.charset = 'UTF-8';
+        s0.parentNode.insertBefore(s1, s0);
+      })();
+    </script>
   </body>
 </html>
