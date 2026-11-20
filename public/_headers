@@ -1,4 +1,3 @@
-
 /*
   X-Frame-Options: SAMEORIGIN
   X-XSS-Protection: 1; mode=block
@@ -11,7 +10,7 @@
   Strict-Transport-Security: max-age=31536000; includeSubDomains
   Referrer-Policy: strict-origin-when-cross-origin
   Access-Control-Allow-Methods: GET, HEAD, OPTIONS
-  Content-Security-Policy: base-uri 'self'; font-src 'self' data: https://*.tawk.to; form-action 'self'; img-src 'self' data: zapier-images.imgix.net https://*.tawk.to https://*.googleusercontent.com https://maps.googleapis.com https://maps.gstatic.com; object-src 'none'; script-src-attr 'self'; script-src 'self' 'unsafe-inline' data: https://embed.tawk.to https://*.tawk.to https://www.googletagmanager.com; worker-src 'self' blob:; style-src 'self' 'unsafe-inline' https://*.tawk.to; frame-src 'self' www.youtube-nocookie.com https://maps.google.com https://www.google.com https://*.tawk.to; connect-src 'self' https://*.tawk.to wss://*.tawk.to https://maps.googleapis.com; upgrade-insecure-requests;
+  Content-Security-Policy: base-uri 'self'; font-src 'self' data: https://*.tawk.to https://fonts.gstatic.com; form-action 'self'; img-src 'self' data: zapier-images.imgix.net https://*.tawk.to https://*.googleusercontent.com https://maps.googleapis.com https://maps.gstatic.com https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://googleads.g.doubleclick.net https://ad.doubleclick.net https://www.google.com https://www.google.si https://cloudflareinsights.com; object-src 'none'; script-src 'self' 'unsafe-inline' data: https://embed.tawk.to https://tawk.to https://*.tawk.to https://www.googletagmanager.com https://www.google-analytics.com https://maps.googleapis.com https://maps.gstatic.com https://static.cloudflareinsights.com; script-src-attr 'unsafe-inline'; worker-src 'self' blob:; style-src 'self' 'unsafe-inline' https://*.tawk.to https://maps.googleapis.com https://maps.gstatic.com https://fonts.googleapis.com; frame-src 'self' https://www.youtube-nocookie.com https://maps.google.com https://www.google.com https://*.tawk.to; connect-src 'self' https://*.tawk.to wss://*.tawk.to https://maps.googleapis.com https://www.googletagmanager.com https://www.google-analytics.com https://*.google-analytics.com https://region1.google-analytics.com https://googleads.g.doubleclick.net https://ad.doubleclick.net https://www.google.com https://cloudflareinsights.com; upgrade-insecure-requests;
 /
   Link: </llms.txt>; rel="describedby"; type="text/plain"
 /map/*.pmtiles
