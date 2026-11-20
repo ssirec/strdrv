@@ -1,6 +1,4 @@
 ---
-import ContactMap from "@components/contact/contact-map.astro";
-
 const title = "MEDIASERVIS – SIRSA d.o.o. | Nova Gorica";
 const description =
   "MEDIASERVIS – SIRSA d.o.o., Ulica Tolminskih puntarjev 4, Nova Gorica. Kontaktirajte nas prek spletnega klepeta ali nas obiščite.";
@@ -90,14 +88,13 @@ const chatUrl = "https://tawk.to/chat/56c73659b74a0813627d275c/1gsshkkuq";
 
       .button:hover { background: #105184; }
 
-      /* Sizing for ContactMap — its Tailwind classes don't apply on this
-         standalone page, so set the box explicitly. */
-      #contact-map {
+      .map {
+        display: block;
         width: 100%;
         height: 380px;
-        margin-top: 15px;
+        border: 0;
         border-radius: 10px;
-        overflow: hidden;
+        margin-top: 15px;
       }
 
       .chat { width: 100%; height: 600px; margin-top: 20px; }
@@ -113,7 +110,7 @@ const chatUrl = "https://tawk.to/chat/56c73659b74a0813627d275c/1gsshkkuq";
       @media (max-width: 600px) {
         main { padding: 38px 0; }
         .card { padding: 20px; }
-        #contact-map { height: 300px; }
+        .map { height: 300px; }
         .chat { height: 550px; }
       }
     </style>
@@ -155,7 +152,14 @@ const chatUrl = "https://tawk.to/chat/56c73659b74a0813627d275c/1gsshkkuq";
             Odpri navigacijo
           </a>
 
-          <ContactMap locale="sl" />
+          <iframe
+            class="map"
+            src="https://www.google.com/maps?q=Ulica%20Tolminskih%20puntarjev%204%2C%205000%20Nova%20Gorica%2C%20Slovenija&z=16&output=embed"
+            loading="lazy"
+            allowfullscreen
+            referrerpolicy="no-referrer-when-downgrade"
+            title="MEDIASERVIS – lokacija v Novi Gorici"
+          ></iframe>
         </section>
 
         <section class="card">
