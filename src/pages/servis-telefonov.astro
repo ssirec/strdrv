@@ -1,0 +1,485 @@
+---
+const title = "MediaServis Nova Gorica | Servis in popravilo telefonov";
+
+const description =
+  "MediaServis Nova Gorica – servis mobilnih telefonov, diagnostika in pomoč pri težavah z napravami. Poiščite našo lokacijo in navodila za pot.";
+
+const mapUrl = "https://maps.app.goo.gl/v8piWYJBkmUYc7u87";
+const chatUrl = "https://tawk.to/chat/56c73659b74a0813627d275c/1gsshkkuq";
+
+// Set `site` in astro.config.mjs so these resolve to your real domain
+const base = Astro.site ?? Astro.url.origin;
+const canonicalUrl = new URL(Astro.url.pathname, base).href;
+const ogImage = new URL("/og-image.png", base).href; // TODO: create a 1200x630 image
+
+// Optional details – fill in, leave "" to hide
+const address = ""; // e.g. "Ulica 1, 5000 Nova Gorica"
+const hours = ""; // e.g. "Pon–Pet 9:00–18:00, Sob 9:00–13:00"
+
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  name: "MediaServis Nova Gorica",
+  description,
+  url: canonicalUrl,
+  hasMap: mapUrl,
+  areaServed: "Nova Gorica",
+  openingHours: hours || undefined,
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: address || undefined,
+    addressLocality: "Nova Gorica",
+    addressCountry: "SI",
+  },
+};
+---
+
+<!doctype html>
+<html lang="sl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#090d18" />
+
+    <link rel="canonical" href={canonicalUrl} />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="sl_SI" />
+    <meta property="og:site_name" content="MediaServis" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:image" content={ogImage} />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImage} />
+
+    <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+
+    <style>
+      :root {
+        color-scheme: dark;
+        --bg: #090d18;
+        --surface: #111827;
+        --text: #f4f7fc;
+        --muted: #a7b2c4;
+        --accent: #72a7ff;
+        --border: rgba(255, 255, 255, 0.1);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+        scroll-padding-top: 84px;
+      }
+
+      body {
+        margin: 0;
+        background:
+          radial-gradient(
+            ellipse at 50% 0%,
+            rgba(57, 105, 190, 0.17),
+            transparent 45%
+          ),
+          var(--bg);
+        color: var(--text);
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system,
+          BlinkMacSystemFont, "Segoe UI", sans-serif;
+        line-height: 1.65;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      a {
+        color: inherit;
+      }
+
+      a:focus-visible {
+        outline: 2px solid var(--accent);
+        outline-offset: 3px;
+        border-radius: 6px;
+      }
+
+      .sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+      }
+
+      .skip-link {
+        position: absolute;
+        left: 16px;
+        top: -60px;
+        z-index: 100;
+        padding: 10px 16px;
+        border-radius: 8px;
+        background: var(--accent);
+        color: #071225;
+        font-weight: 700;
+        text-decoration: none;
+      }
+
+      .skip-link:focus {
+        top: 12px;
+      }
+
+      .container {
+        width: min(1100px, calc(100% - 40px));
+        margin-inline: auto;
+      }
+
+      .topbar {
+        position: sticky;
+        top: 0;
+        z-index: 50;
+        border-bottom: 1px solid var(--border);
+        background: rgba(9, 13, 24, 0.82);
+        -webkit-backdrop-filter: blur(12px);
+        backdrop-filter: blur(12px);
+      }
+
+      .topbar-inner {
+        min-height: 68px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+      }
+
+      .brand {
+        text-decoration: none;
+        font-weight: 800;
+        letter-spacing: -0.04em;
+        font-size: 1.2rem;
+      }
+
+      .brand span {
+        color: var(--accent);
+      }
+
+      .back-link {
+        color: var(--muted);
+        text-decoration: none;
+        font-size: 0.9rem;
+      }
+
+      .back-link:hover {
+        color: var(--text);
+      }
+
+      .hero {
+        padding: 105px 0 90px;
+        text-align: center;
+      }
+
+      .eyebrow {
+        display: inline-flex;
+        align-items: center;
+        gap: 9px;
+        margin-bottom: 22px;
+        padding: 7px 13px;
+        border: 1px solid rgba(114, 167, 255, 0.28);
+        border-radius: 999px;
+        color: #b8d2ff;
+        background: rgba(77, 141, 246, 0.09);
+        font-size: 0.83rem;
+        font-weight: 600;
+      }
+
+      .eyebrow::before {
+        content: "";
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        background: var(--accent);
+      }
+
+      h1 {
+        max-width: 900px;
+        margin: 0 auto 22px;
+        font-size: clamp(2.5rem, 6vw, 4.6rem);
+        line-height: 1.08;
+        letter-spacing: -0.055em;
+        font-weight: 780;
+      }
+
+      h1 span {
+        color: var(--accent);
+      }
+
+      .hero-text {
+        max-width: 690px;
+        margin: 0 auto;
+        color: var(--muted);
+        font-size: clamp(1.05rem, 2vw, 1.2rem);
+      }
+
+      .actions {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 13px;
+        margin-top: 34px;
+      }
+
+      .button {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        min-height: 52px;
+        padding: 13px 23px;
+        border-radius: 10px;
+        text-decoration: none;
+        font-weight: 700;
+        transition: transform 160ms ease, background 160ms ease;
+      }
+
+      .button svg {
+        width: 20px;
+        height: 20px;
+        fill: none;
+        stroke: currentColor;
+        stroke-width: 2;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        flex-shrink: 0;
+      }
+
+      .button:hover {
+        transform: translateY(-2px);
+      }
+
+      .button-primary {
+        color: #071225;
+        background: var(--accent);
+      }
+
+      .button-primary:hover {
+        background: #91bbff;
+      }
+
+      .button-secondary {
+        color: var(--text);
+        border: 1px solid var(--border);
+        background: rgba(255, 255, 255, 0.04);
+      }
+
+      .button-secondary:hover {
+        background: rgba(255, 255, 255, 0.09);
+      }
+
+      .section {
+        padding: 75px 0;
+      }
+
+      .section-heading {
+        max-width: 700px;
+        margin: 0 auto 42px;
+        text-align: center;
+      }
+
+      .section-heading h2 {
+        margin: 0 0 13px;
+        font-size: clamp(1.8rem, 4vw, 2.6rem);
+        line-height: 1.2;
+        letter-spacing: -0.04em;
+      }
+
+      .section-heading p {
+        margin: 0;
+        color: var(--muted);
+      }
+
+      .cards {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 18px;
+      }
+
+      .card {
+        padding: 27px;
+        border: 1px solid var(--border);
+        border-radius: 15px;
+        background: linear-gradient(
+          145deg,
+          rgba(23, 34, 53, 0.9),
+          rgba(17, 24, 39, 0.8)
+        );
+      }
+
+      .card-icon {
+        display: grid;
+        place-items: center;
+        width: 45px;
+        height: 45px;
+        margin-bottom: 19px;
+        border-radius: 12px;
+        color: #b8d2ff;
+        background: rgba(77, 141, 246, 0.13);
+      }
+
+      .card-icon svg {
+        width: 22px;
+        height: 22px;
+        fill: none;
+        stroke: currentColor;
+        stroke-width: 1.8;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .card h3 {
+        margin: 0 0 9px;
+        font-size: 1.12rem;
+      }
+
+      .card p {
+        margin: 0;
+        color: var(--muted);
+        font-size: 0.95rem;
+      }
+
+      .location {
+        padding: 45px;
+        border: 1px solid rgba(114, 167, 255, 0.2);
+        border-radius: 20px;
+        background:
+          radial-gradient(
+            ellipse at 100% 0%,
+            rgba(77, 141, 246, 0.13),
+            transparent 50%
+          ),
+          var(--surface);
+        text-align: center;
+      }
+
+      .location h2 {
+        margin: 0 0 12px;
+        font-size: clamp(1.8rem, 4vw, 2.5rem);
+        letter-spacing: -0.04em;
+      }
+
+      .location p {
+        max-width: 580px;
+        margin: 0 auto;
+        color: var(--muted);
+      }
+
+      .details {
+        list-style: none;
+        margin: 26px auto 0;
+        padding: 0;
+        display: grid;
+        gap: 6px;
+        color: var(--text);
+      }
+
+      .details strong {
+        color: var(--muted);
+        font-weight: 600;
+        margin-right: 6px;
+      }
+
+      .location .actions {
+        margin-top: 25px;
+      }
+
+      .footer {
+        padding: 27px 0;
+        border-top: 1px solid var(--border);
+        color: var(--muted);
+        font-size: 0.85rem;
+        text-align: center;
+      }
+
+      .footer a {
+        color: var(--muted);
+        text-decoration: none;
+      }
+
+      .footer a:hover {
+        color: var(--text);
+      }
+
+      @media (max-width: 760px) {
+        .hero {
+          padding: 75px 0 65px;
+        }
+
+        .cards {
+          grid-template-columns: 1fr;
+        }
+
+        .card {
+          padding: 23px;
+        }
+
+        .section {
+          padding: 55px 0;
+        }
+
+        .location {
+          padding: 30px 20px;
+        }
+
+        .topbar-inner {
+          min-height: 60px;
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        html {
+          scroll-behavior: auto;
+        }
+
+        *,
+        *::before,
+        *::after {
+          transition-duration: 0.01ms !important;
+        }
+
+        .button:hover {
+          transform: none;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <a class="skip-link" href="#vsebina">Preskoči na vsebino</a>
+
+    <header class="topbar">
+      <div class="container topbar-inner">
+        <a class="brand" href="/" aria-label="MediaServis – domača stran">
+          Media<span>Servis</span>
+        </a>
+
+        <a class="back-link" href="/">Domača stran →</a>
+      </div>
+    </header>
+
+    <main id="vsebina">
+      <section class="hero">
+        <div class="container">
+          <div class="eyebrow">MediaServis · Nova Gorica</div>
+
+          <h1>
+            Servis mobilnih telefonov
+            <span>v Novi Gorici.</span>
+          </h1>
